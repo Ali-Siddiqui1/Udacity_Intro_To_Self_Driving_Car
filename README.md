@@ -17,5 +17,5 @@ The Course contains are segregated into the following.
 9. Computer Vision And Machine Learning
 
 ## Projects
-#####1. JoyRide - Parrallel Parking
+##### 1. JoyRide - Parrallel Parking
 
