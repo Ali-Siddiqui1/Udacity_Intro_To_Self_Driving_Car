@@ -16,4 +16,6 @@ The Course contains are segregated into the following.
 8. Vehicle Motion and Control
 9. Computer Vision And Machine Learning
 
+## Projects
+#####1. JoyRide - Parrallel Parking
 
