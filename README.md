@@ -19,6 +19,6 @@ The Course contains are segregated into the following.
 ## Projects
 ##### 1. JoyRide - Parrallel Parking
 
-![](Parrallel_Park.png)
+![](parking.jpeg)
 
 [Source](https://drive.google.com/file/d/1-X6UsyV2kh2R7fq8V8eFdoYz_H91O3Kx/view?usp=sharing)
