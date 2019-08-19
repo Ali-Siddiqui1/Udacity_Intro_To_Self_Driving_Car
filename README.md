@@ -28,3 +28,7 @@ The Course contains are segregated into the following.
 [Source](https://drive.google.com/file/d/1c5tsF6fdCnoLv9MXVFExdFLr3TZ1nAge/view?usp=sharing)
 
 
+##### 3. Performance Programming in C++
+[Source](https://drive.google.com/file/d/1dPquv2FXW5L2ZALGl4T3ZWemBR2xchkl/view?usp=sharing)
+
+##### 4. Optimize Histogram Filter
