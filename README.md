@@ -20,11 +20,13 @@ The Course contains are segregated into the following.
 ##### 1. JoyRide - Parrallel Parking
 
 ![](parking.jpeg)
+
 [Source](https://drive.google.com/file/d/1-X6UsyV2kh2R7fq8V8eFdoYz_H91O3Kx/view?usp=sharing)
 
 ##### 2. Implement of a Matrix Class 
 
 ![](Lidar.jpeg)
+
 [Source](https://drive.google.com/file/d/1c5tsF6fdCnoLv9MXVFExdFLr3TZ1nAge/view?usp=sharing)
 
 
@@ -32,3 +34,9 @@ The Course contains are segregated into the following.
 [Source](https://drive.google.com/file/d/1dPquv2FXW5L2ZALGl4T3ZWemBR2xchkl/view?usp=sharing)
 
 ##### 4. Optimize Histogram Filter
+
+[Source]()
+
+##### 5. A-Star Routing Algorithm in Python
+
+[Source]() 
