@@ -4,7 +4,7 @@ This repository contains all projects and relevent exercise of the Udacity Inro 
 ![](isdc-car.png)
 
 ## Chapters
-The Course contains are segregated into the following.
+The Course contents are segregated into the following.
 
 1. Orientation
 2. Bayesian Thinking 
