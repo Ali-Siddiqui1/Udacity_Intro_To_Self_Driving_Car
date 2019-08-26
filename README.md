@@ -36,9 +36,8 @@ The Course contents are segregated into the following.
 [Source](https://drive.google.com/file/d/1dPquv2FXW5L2ZALGl4T3ZWemBR2xchkl/view?usp=sharing)
 
 ##### 4. Optimize Histogram Filter
-
 [Source]()
 
 ##### 5. A-Star Routing Algorithm in Python
-
+![](Plot1.png)
 [Source]() 
