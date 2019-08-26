@@ -40,4 +40,9 @@ The Course contents are segregated into the following.
 
 ##### 5. A-Star Routing Algorithm in Python
 ![](Plot1.png)
+
+
+![](Plot2.png)
+
+
 [Source]() 
