@@ -41,48 +41,48 @@ p_sum = sum(p)
 # # # print sum
 print(p_sum)
 
-# def sense(p, Z):
-#     q = []
-#     for i in range(len(p)):
-#         hit = (Z == world[i])
-#         q.append(p[i] * (hit * pHit + (1 - hit) * pMiss))
+def sense(p, Z):
+    q = []
+    for i in range(len(p)):
+        hit = (Z == world[i])
+        q.append(p[i] * (hit * pHit + (1 - hit) * pMiss))
 
-#     # to find the sum we can do like this 
-#     s = sum(q)
-#     for i in range(len(p)):
-#         q[i] = q[i] / s
+    # to find the sum we can do like this 
+    s = sum(q)
+    for i in range(len(p)):
+        q[i] = q[i] / s
     
-#     return q
+    return q
 
-# for k in range(len(measurements)):
-#         p = sense(p, measurements[k])
+for k in range(len(measurements)):
+    p = sense(p, measurements[k])
 
-# print('new measurements',p)
+print('new measurements',p)
 
-# # print('sense function', sense(p,Z))
+print('sense function', sense(p,Z))
 
-# #Program a function that returns a new distribution 
-# #q, shifted to the right by U units. If U=0, q should 
-# #be the same as p.
-
-
-# p=[0, 1, 0, 0, 0]
-# world=['green', 'red', 'red', 'green', 'green']
-# measurements = ['red', 'green']
-# pHit = 0.6
-# pMiss = 0.2
+#Program a function that returns a new distribution 
+#q, shifted to the right by U units. If U=0, q should 
+#be the same as p.
 
 
-# def move(p, U):
-#     q = [] # we start with empty list 
-#     for i in range(len(p)): # we go through all the elememnts in p 
-#         q.append(p[i - U % len(p)]) # we access q by corresponding p 
-#         # p is shifted by U and if the shift exceed the range 
-#         # we apply  module operator with the number of states in an argument
-#         # the reason for "-" sign is that we need to find. 
-#         # We constructed q by searching for where the robot might have come from and that's from the left 
-#     return q
+p=[0, 1, 0, 0, 0]
+world=['green', 'red', 'red', 'green', 'green']
+measurements = ['red', 'green']
+pHit = 0.6
+pMiss = 0.2
 
-# print (move(p,1)) 
+
+def move(p, U):
+    q = [] # we start with empty list 
+    for i in range(len(p)): # we go through all the elememnts in p 
+        q.append(p[i - U % len(p)]) # we access q by corresponding p 
+        # p is shifted by U and if the shift exceed the range 
+        # we apply  module operator with the number of states in an argument
+        # the reason for "-" sign is that we need to find. 
+        # We constructed q by searching for where the robot might have come from and that's from the left 
+    return q
+
+print (move(p,1)) 
 
 
