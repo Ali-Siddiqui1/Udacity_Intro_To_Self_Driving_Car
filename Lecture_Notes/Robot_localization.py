@@ -85,4 +85,8 @@ def move(p, U):
 
 print (move(p,1)) 
 
+# Result should be a list with 4 elements all having value 1
+assert initial_robot(4) == [1/4, 1/4, 1/4, 1/4]
+
+print('Horray! you just initialized a discrete probability distribution')
 
