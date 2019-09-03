@@ -72,3 +72,31 @@ float distance_covered = 10.0;
 *that the program ran to its end
 */
 
+//define main function
+int main(){
+    
+    // define integer
+    int integer_one;
+    integer_one = 5;
+    
+    // define a variable called integer_two and assign a value of 9
+    int integer_two;
+    integer_two = 10;
+    
+    // calculate the sum of integer_one and integer_two
+    // and assign the result to integer_sum
+    int integer_sum = integer_one + integer_two
+    
+    //output the result to standard out
+    std::cout << integer_sum;
+}
+
+// if that was in Python remember Python is dynamically typed language
+// whereas C++ is statically typed and you need to declare the variable type prior to assignment
+
+
+/*
+ 
+ Basic C++ Data Types
+ 
+ */
