@@ -79,6 +79,36 @@ float distance(float velocity, float acceleration, float time_elapsed){
     
 }
 
+// ** Functin with more than one output
+// In python, you can write a function that has multiple output
+/* Python Code
+ def distance(velocity, time_elapsed):
+     return velcity * time_elapsed, velocity / 2
+
+ // would output both velocty * time_elapsed and time_elapsed / 2
+ 
+ */
+
+// In C++, functions can only have one output. There are work arounds, but these works arounds are beyond the scope of these lectures
+
+//C++ Tips: Function Declaration tips
+// You don't have to declare and define seprately but you can declare and define simultaneously
+// C++ Code
+
+float distance(float velocity,float elapsedtime){
+    return velocity + elapsedtime
+}
+
+int main(){
+    
+    std::cout << distance(10.4,20.10) << std::cout
+    
+    return 0;
+}
+// But note that you have to define your function before the main()function otherwise your code would try to call the distance() function but don not have the defintion of the function
+
+// However declaring and defing function separately helps keep code organised
+
 
 
 
