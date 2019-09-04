@@ -99,7 +99,7 @@ int main(){
 
 /*
   Basic C++ Data Types
- 
+
 Data type                                           Declaration
 *integer(-20,10,-100)                               int
 *floating point(20.10,30.26)                        float
@@ -107,10 +107,11 @@ Data type                                           Declaration
 *character(Alhabet)                                 char
 *boolean(True or False)                             bool
 *valueless(can not declare void variable in CPP     void
- 
+
 */
 
-//#include<iostream>
+#include<iostream>
+
 // Assigning other Data Types
 
 //define main function
@@ -144,4 +145,79 @@ int main(){
 
     return 0;
 
+}
+
+/*
+
+ Diff beetween Float and Double
+
+* A float has about 7 digits after the decimal point whereas
+ a double float can have about 15 digits
+
+* A double more memory
+* Using doubles lead to fewer rounding errors
+
+ */
+
+// Both data types can be represent numbers containing decimals
+
+float x = 5.79;
+
+double x = 5.79;
+
+// access input output library
+#include<stdio.h>
+
+//define main function
+int main(){
+
+    // define floating point numbers
+    float float_num; //define float sum
+    float float_sum = 0; //float sum is 0
+
+
+    double double_num; //define double sum
+    double double_sum = 0; //double sum is 0
+
+    int divisions = 10000; //integer division number
+
+    //divide the floating point number by divisions
+    float_num = 11.0/divisions;
+    double_num = 11.0/divisions;
+
+    //sum the number by the number of divisions to see how close the results
+    //get to 11.0
+    for (int i; i < divisions; i++) {//for loop in CPP
+        float_sum = float_sum + float_num; // here we are not defining float
+        double_sum = double_sum + double_num;
+
+    }
+    printf("Floating point sum: %.15g\n", float_sum); // maximum
+    printf("Double sum: %.15g\n", double_sum);
+
+    return 0;
+
+}
+
+// Bit more practice
+
+// access library
+#include<iostream>
+
+//define function
+int main(){
+    
+    int x = 10;
+    double y = 20.10;
+    float z = 20.10;
+    
+    int product1 = x * y;
+    int product2 = x * z;
+    
+    //output the result
+    std::cout << product1 << std::endl;
+    std::cout << product2 << std::endl;
+    
+    return 0;
+    
 }
