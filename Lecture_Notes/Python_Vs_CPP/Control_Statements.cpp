@@ -159,26 +159,99 @@ int main(){
  elapsed_time = 15
  for i in range(0, elapsed_time):
      print("Traffic light is Red", i)
- 
+
  print("Traffic light is green")
 */
 
 //                                                CPP
 
  // include input/output library
- 
+
 #include<iostream>
 
 int main(){
-    
+
     int elapsed_time = 15;
-    
+
     for(int i = 0; i < elapsed_time; i++){
         std::cout << "Traffic Light is Red" << std::endl;
     }
-    
+
     std::cout << "Traffic Light is green" << std::endl;
     std::cout << "Traffic Light is yellow" << std::endl;
-    
+
     return 0;
 }
+
+/*              Import Note about for loops Python Vs CPP
+ 
+                                In Python
+ *for python the iterator was defines here
+ i in range (0, elapsed_time):
+ 
+ *Python range's function generates a list of function which in this case would be
+ [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+ 
+ *Then Python assign each of these values in turn to the i variable until reaching the end of the list
+ 
+ 
+                                In CPP
+*for CPP the itrator happens in this line of code
+ (int i, i < elapsed_time, i++);
+ 
+ *First you declare the i variable and assign a value(in this case zero). Then for loop checks if
+ i < elapsed_time
+ 
+ *if true, then the code block is run and then increase by one. The code i++ is equivalent to i=i+1
+ 
+ When
+i = 14
+
+that will be the last time that the code block runs.
+The code checks that 14 is less than 15, runs the code block and increases i to 15.
+Then the code checks if 15 is less than 15. Since that is false, the for loop does not run again.
+ 
+*/
+
+
+                            // Another Example of for loops
+
+#include<iostream>
+
+int main(){
+    //write a for loop that iterates from 0 to 80.
+    for(int i = 0; i < 80; i++){
+        // If the iterator is greater than or equal to 0 but less than 10
+        if (i < 10){
+            //output the phrase 'slow'
+            std::cout << "slow" << std::endl;
+        }
+        // If the iterator is between 10 inclusive
+        // and less than 30, output the phrase 'medium'
+        else if (i < 30){
+            std::cout << "Medium" << std::endl;
+        }
+        
+        // If the iterator is between 30 inclusive and 70, output the phrase 'fast'
+        else if (i < 70){
+            std::cout << "fast" << std::endl;
+        }
+        // If the iterator is greater than 70 inclusive, output the phrase 'too fast'
+        else{
+            std::cout << "too fast" << std::endl;
+        }
+        
+    }
+    return 0;
+}
+
+// One item to note in the above playground is that C++ considers something enclosed in single quotes ('a') to be a char,
+// while double quotes ("fast") is a string.
+
+
+
+
+// A Switch statement is statement is quite similar to an if clause.
+//Below i will write a program that does the same thing with either a switch statement or a series of if - else clause
+// There are no Python switch statement
+
