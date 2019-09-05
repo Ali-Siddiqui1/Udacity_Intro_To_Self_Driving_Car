@@ -255,3 +255,58 @@ int main(){
 //Below i will write a program that does the same thing with either a switch statement or a series of if - else clause
 // There are no Python switch statement
 
+//                              CPP If statement
+
+//import input , output library
+#include<iostream>
+
+// main function
+int main(){
+    
+    char gear_status == 'N';
+    
+    if(gear_status == 'N'){
+        std::cout << "neutral" << std::endl;
+    }
+    else if(gear_status == 'R'){
+        std::cout << "reverse" << std::endl;
+    }
+    else if(gear_status == 'D'){
+        std::cout << "Drive" << std::endl;
+    }
+    else if(gear_status == 'P'){
+        std::cout << "Park" << std::endl;
+    }
+    
+    std::cout << "Your car is currently in gear" << gear_status << std::end;
+    return 0;
+}
+
+//                          // CPP Switch
+
+// import input , output library
+#include<iostream>
+
+// main function
+int main(){
+    
+    char gear_status == 'N';
+    
+    switch(gear_switch){
+        case 'D':
+            std::cout << "Driving" << std::endl;
+            break;
+        case 'N':
+            std::cout << "Neutral" << std::endl;
+            break;
+        case 'R':
+            std::cout << "Reverse" << std::endl;
+        case 'P';
+            std::cout << "Park" << std::endl;
+    }
+    
+    std::cout << "Your car is currently in gear" << gear_status << std::endl;
+    
+    
+    return 0;
+}
