@@ -310,3 +310,31 @@ int main(){
     
     return 0;
 }
+
+
+//                       C++ Libraries
+//We have seen how to declare variables, write functions, and use control statements so far which was just the building blocks of any programming language.
+
+// If you want to want to store a string in a variable or do more advance math like taking square root of a number.
+
+// Just like python, C++ also uses pre-built libraries to help make programming easier. In Python, you use these libraries with an
+
+/*                  For Python
+import
+
+*/
+
+/*                  In CPP
+ 
+ #include
+ or you can write like this
+ #include"iostream"
+ #include"distance.h"
+ 
+ * The "iostream" file contains function and classes for outputting to the terminal and also reading in from terminal.
+ 
+ // CPP Standard libraries are here -->https://en.cppreference.com/w/cpp/header
+ or --> https://en.cppreference.com/w/cpp/links/libs
+ 
+ */
+
