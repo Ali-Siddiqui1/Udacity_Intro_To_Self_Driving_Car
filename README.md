@@ -48,4 +48,4 @@ The Course contents are segregated into the following.
 [Source](https://drive.google.com/open?id=1t7Ru0kAIj4UVEl8_wdl2Xty5amJhUkLP) 
 
 #### Udacity Graduation 
-![](Babar_Ali_Siddiqui.pdf)
+![](certificate.pdf)
