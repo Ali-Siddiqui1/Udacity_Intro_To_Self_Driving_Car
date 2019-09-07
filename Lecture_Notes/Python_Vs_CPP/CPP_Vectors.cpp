@@ -36,6 +36,7 @@ int main(){
     std::vector<int> vector3;
 
     return 0;
+<<<<<<< HEAD
 
 }
 
@@ -77,3 +78,7 @@ int main() {
     return 0;
 }
 
+=======
+
+}
+>>>>>>> d85e6770cc0787aa9d6a15a77fe9bc2f8392197b
