@@ -77,7 +77,35 @@ int main() {
 
     return 0;
 }
+//              Python vs CPP Comparison
 
-=======
+/*              Python List
+ mylist = [5.0,3.0,2.7,8.2,7.9]
+ print(mylist)
+ 
+ */
 
+//              CPP Vectors
+
+#include<iostream>
+#include<vector>
+
+using namespace std;
+
+int main(){
+    // declare vector of size five but without assigning any values
+    vector<float> myvector (5);
+    
+    // assign now
+    vector[5.0] = 5.0;
+    vector[3.0] = 3.0;
+    vector[2.7] = 2.7;
+    vector[8.2] = 8.2;
+    vector[7.9] = 7.9;
+    
+    for (int i = 0; i < myvector; i++){
+        cout << myvector[i] << "";
+    }
+    cout<<endl;
+    return 0;
 }
