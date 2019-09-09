@@ -42,6 +42,8 @@ The Course contents are segregated into the following.
 ![](Plot1.png)
 
 
+
+
 ![](Plot2.png)
 
 
@@ -49,6 +51,11 @@ The Course contents are segregated into the following.
 
 ##### 6. Traffic Light classifier
 ![](classifier.png)
+
+
+
+
+![](feature.png)
  
 
 ### Udacity Graduation 
