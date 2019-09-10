@@ -117,3 +117,17 @@ std::vector < int > myvector(10,6);
 // but CPP C++11 or C++17 required
 
 std::vector<float> myvector = {5.0,3.0,2.7,8.2,7.9}
+
+// Assign helps you quickly populate a vector with fixed values like this code
+vector<int> intvariable;
+// populate the vector with ten integers all having the value of 16
+intvariable.assign(10,16);
+// Also the assign method let you override your current vector with a new vector
+
+// Push_back adds an element to the end of the vector
+vector<int> intvariable;
+intvariable.Push_back(19);
+
+// size return the size of the vector
+intvariable.size()
+
