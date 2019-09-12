@@ -131,3 +131,26 @@ intvariable.Push_back(19);
 // size return the size of the vector
 intvariable.size()
 
+
+// Here is a program that initiate a vector and then uses a for loop to populate the vector with values.
+// Then another for loop reads out the vector values.
+
+// Import library
+#include<iostream>
+#include<vector>
+
+// main function
+int main(){
+    
+    vector<float> example;
+    
+    // initiate a vector
+    for(int i = 0;i < 5; i++){
+        example.Push_back(i*5.231);
+    }
+    // reads out the vector values
+    for(int i = 0; i < example.size(); i++){
+        cout << example[i] << endl;
+    }
+    return 0;
+}
