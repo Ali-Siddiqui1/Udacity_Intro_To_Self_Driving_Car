@@ -154,3 +154,16 @@ int main(){
     }
     return 0;
 }
+
+//In practice both i++ and ++i gives you the same result
+// These are the short way of writing i = i + 1
+// The diff between two is subtle
+
+int i = 5;
+//In the postfix case, i++, int x = i is evaluated first and then i = i + 1 occurs.
+int x = i++; // x = 5, i = 6 (called postfix)
+
+// In the prefix case, ++i, i = i + 1 occurs first and then int x = i executes.
+int x = ++i; // x = 5, i = 6 (called prefix)
+
+// In both cases, the i variable increases by 1.
