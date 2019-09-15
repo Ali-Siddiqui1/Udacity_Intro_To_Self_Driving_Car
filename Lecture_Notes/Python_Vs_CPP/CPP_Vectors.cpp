@@ -178,7 +178,7 @@ using namespace std;
 
 // CPP main function
 int main() {
-    
+
     // Part 1: declare and define a vector with values
     //        {5.0, 5.0, 5.0} and print
     //         the vector to the terminal using cout
@@ -194,7 +194,7 @@ int main() {
     length.push_back(2.5);
     length.push_back(1.4);
     // Part 3: Print out the vector again using cout
-    
+
     for(int i = 0; i < length.size(); i++){
         cout << length[i] << "";
     }
@@ -204,11 +204,51 @@ int main() {
     // the values {5.0, 5.0, 5.0}
     length.assign(3,5.0);
     // Part 5: Print out the vector
-    
+
     for(int i = 0; i < length.size(); i++){
         cout << length[i] << "";
     }
     cout <<"\n";
-    
+
     return 0;
 }
+
+
+//              Math And Vectors
+
+// Example one:     multiply each element in a vector by a costant
+
+// import library
+#include<iostream>
+#include<vector>
+
+using namespace std;
+
+// CPP main function
+int main(){
+
+    // declare and define
+    vector <float>dot;
+
+    // assign 5 floats with value 10
+    dot.assign(5,10.0);
+
+    // print out the vector
+    for(int i = 0; i < dot.size(); i++){
+        cout << dot[i] << endl;
+    }
+
+    // Blank link outputted to the terminal
+    cout << endl;
+
+    //multiply each value in the vector by 20
+    for(int i = 0;i < dot.size(); i++){
+        dot[i] = 20*dot[i];
+    }
+    // print out the vector
+    for(int i = 0; i < dot.size(); i++){
+        cout << dot[i] << endl;
+    }
+    return 0;
+}
+
