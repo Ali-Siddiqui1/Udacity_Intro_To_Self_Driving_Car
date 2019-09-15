@@ -252,3 +252,67 @@ int main(){
     return 0;
 }
 
+
+// Example two: Add two vector together
+
+#include<iostream>
+#include<vector>
+
+using namespace std;
+
+int main(){
+
+    vector<int> exampleone;
+    vector<int> exampletwo;
+    vector<int> examplesum;
+
+    // assign values
+    exampleone[0] = 2;
+    exampleone[1] = 3;
+    exampleone[2] = 4;
+    exampleone[3] = 5;
+    exampleone[4] = 6;
+
+    exampletwo[0] = 1;
+    exampletwo[1] = 10;
+    exampletwo[2] = 20;
+    exampletwo[3] = 30;
+    exampletwo[4] = 40;
+
+    cout << "vector one";
+
+    // print out the first vector
+    for(int i = 0; i < exampleone.size();i++){
+        cout << exampleone[i] << "";
+    }
+
+    // create a new line in the terminal
+    cout << endl;
+
+    cout << "vector two";
+
+    // print out the second vector
+    for(int i = 0; i < exampletwo.size(); i++){
+        cout << exampletwo[i] << "";
+    }
+
+    // create a new line in the terminal
+    cout << endl;
+
+    cout<< "vector sum";
+
+    //add the two vector together
+    for(int i = 0; i < examplesum.size(); i++){
+        examplesum[i] = exampleone[i] + exampletwo[i];
+    }
+
+    // print out the vector
+    for(int i = 0; i < examplesum.size(); i++){
+        cout << examplesum[i] << "";
+    }
+    // create a new line in terminal
+    cout << endl;
+
+    return 0;
+
+}
