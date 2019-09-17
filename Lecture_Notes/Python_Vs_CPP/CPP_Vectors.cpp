@@ -311,8 +311,51 @@ int main(){
         cout << examplesum[i] << "";
     }
     // create a new line in terminal
-    cout << endl;
-
-    return 0;
-
-}
+    
+    //                           Two Dimensional Vectors
+    //Now, we are going to use vectors to store matrices just like python uses list of list to store matrices
+    // for CPP we use vectors of vectors
+    
+    //                                  Python Vs CPP
+    
+    /*                                  Python
+     matrixexample=[[2,2,2],
+     [2,2,2],
+     [2,2,2],
+     [2,2,2]]
+     print(matrixexample)
+     */
+    
+    //                                  CPP
+    
+    // import libraries
+#include<iostream>
+#include<vector>
+    using namespace std;
+    
+    // CPP main function
+    int main(){
+        // declare and define two dimensional vector of type int
+        vector < vector<int> > twodvector;
+        
+        // a one dimensional vector called singlerow is declared. The singlerow vector has the form [2, 2, 2].
+        // setup a row
+        vector <int> singlerow(3,2);
+        
+        // the singlerow vector is appended to the twodvector five times
+        // append five rows
+        for(int i;i < 5; i++){
+            twodvector.push_back(singlerow);
+        }
+        // print out the matrix
+        for(int row = 0; row < twodvector.size(); row++){
+            for (int column = 0; column < twodvector[0].size(); column++){
+                cout <<twodvector[row][column]<< "";
+                
+            }
+            cout << endl;
+        }
+        return 0;
+    }
+    
+ 
