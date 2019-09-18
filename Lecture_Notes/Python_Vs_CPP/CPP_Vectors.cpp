@@ -358,4 +358,34 @@ int main(){
         return 0;
     }
     
- 
+    // like with all variables in C++, you have to declare what type of values will go into the vector.
+    //In this case, integers will go into the twodvector variable.
+    
+    // Notice the spaces between brackets < vector <int> >.
+    // Your program probably won't run if the spacing is not done correctly
+    
+    // Here is another way you could have set up the vector from the previous example:
+    vector < veector <int> > twodvector(5, vector <int> (3,2));
+    
+    
+    // the line
+    vector <int> (3,2);
+    //would set up an integer vector like {2, 2, 2}.
+    //So even though you don't see the inner vector, the code is essentially doing something like this:
+    vector <vector <int> > twodvector (5,{2,2,2});
+    
+    
+    
+    /*                  Note
+     only python represent the vectors or matrices with square brackets [].
+     Newer versions of C++ can use squiggly brackets to represent vectors {},
+     but older implementations of C++ do not have an equivalent representation.
+     */
+    // A line of code like the following would not run in C++:
+    vector <vector <int> > twodvector(5[2,2,2]);
+    
+    
+    
+    
+    
+  
