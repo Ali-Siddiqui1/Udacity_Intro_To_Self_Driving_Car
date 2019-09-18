@@ -384,8 +384,13 @@ int main(){
     // A line of code like the following would not run in C++:
     vector <vector <int> > twodvector(5[2,2,2]);
     
-    
-    
-    
-    
+    // Because 2D vectors are just vectors inside a vector, a 2D vector has the same methods as a 1D vector.
+    for (int row = 0; row < twodvector.size(); row++) {
+        for (int column = 0; column < twodvector[0].size(); column++) {
+            cout << twodvector[row][column] << " ";
+        }
+        cout << endl;
+        
+        // When you type twodvector.size(), that will give you the size of the outside vector.
+        //The outside vector had five elements, which represents the number of rows in the matrix being represented:
   
