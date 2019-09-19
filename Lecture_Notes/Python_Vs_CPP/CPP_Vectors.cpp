@@ -393,4 +393,76 @@ int main(){
         
         // When you type twodvector.size(), that will give you the size of the outside vector.
         //The outside vector had five elements, which represents the number of rows in the matrix being represented:
-  
+        
+        
+        //When you write twodvector[0].size(), you are taking the first element of the outside vector, [2 2 2],
+        //and asking for the size of that vector, which in this case is three.
+        
+        
+        // Write a function that receives two integer matrices and outputs
+        
+        
+#include <iostream>
+#include<vector>
+        
+        using namespace std;
+        
+        int intmatrix(){
+            
+            vector <vector <int> > matrixsum(vector <int> matrix1, vector < vector <int> > matrix2);
+            
+            //declare and define
+            vector < vector <int> > matrix1 (5, vector <int> (3, 2));
+            vector < vector <int> > matrix2 (5, vector <int> (3,26));
+            
+            // declare an empty vector
+            vector <vector <int> > matricresult;
+            
+            // calculate the matrix print function to print out the result
+            matrixprint(matrixresult);
+            
+            return 0;
+        }
+        
+        // function to add two matrices together
+        vector< vector <int> > matrixsumresult (matrix1.size(), vector <int> (matrix1[0].size(),0));
+        {
+            
+            // declare a matrix with the same size as matrix1 and matrix2
+            vector < vector <int> > matrixsumresult (matrix1.size(), vector <int> (matrix1[0].size(), 0));
+            
+            // iterate through matrix1 and assign the sum of each element to the results matrix
+            for (int row = 0; row < matrix1.size(); row++) {
+                for (int column = 0; column < matrix1[0].size(); column++) {
+                    matrixsumresult[row][column] = matrix1[row][column] + matrix2[row][column];
+                }
+                
+            }
+            
+            return matrixsumresult;
+            
+            
+        }
+        
+        // function to print an integer matrix
+        void matrixprint(vector < vector <int> > inputmatrix) {
+            
+            for (int row = 0; row < inputmatrix.size(); row++) {
+                for (int column = 0; column < inputmatrix[0].size(); column++) {
+                    cout << inputmatrix[row][column] << " ";
+                }
+                cout << endl;
+                
+            }
+        }
+        
+        
+        
+        cout << endl;
+        
+        return 0;
+        
+    }
+    
+    
+
