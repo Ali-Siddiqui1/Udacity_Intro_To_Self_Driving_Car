@@ -1,6 +1,6 @@
 // CPP vectors are just like Python list but CPP also has list which but doesn't work the same way as python does
 // CPP list and Python list are both in family structure called sequence containers. These containers allows us to store values in series and then access those values
-//
+
 // include file from standard library
 #include<vector>
 #include<iostream>
@@ -22,7 +22,7 @@ int main(){
 }
 
 // Practice CPP Vector Library
-//
+
 // import the vector library
 #include<vector>
 #include<iostream>
@@ -42,7 +42,7 @@ int main(){
 
 // CPP syntax is bit hard and to avoid std we can declare this at the top like where we usually put libarary
 
- //so the syntax would be like
+//so the syntax would be like
 
 #include<iostream>
 #include<vector>
@@ -57,7 +57,7 @@ int main(){
     return 0;
 }
 
-   //                    Another Example of using namespace
+            //                    Another Example of using namespace
 
 
 #include <iostream>
@@ -85,7 +85,7 @@ int main() {
 
  */
 
-//              CPP Vectors
+//                                         CPP Vectors
 
 #include<iostream>
 #include<vector>
@@ -109,6 +109,7 @@ int main(){
     cout<<endl;
     return 0;
 }
+
 // Declaring and Defining a Simultaneously
 
 std::vector < int > myvector(10,6);
@@ -155,7 +156,7 @@ int main(){
     return 0;
 }
 
-//In practice both i++ and ++i gives you the same result
+// In practice both i++ and ++i gives you the same result
 // These are the short way of writing i = i + 1
 // The diff between two is subtle
 
@@ -168,7 +169,7 @@ int x = ++i; // x = 5, i = 6 (called prefix)
 
 // In both cases, the i variable increases by 1.
 
-//                      An example
+//                                                 An example
 
 //include the iostream and vector libraries
 #include<iostream>
@@ -214,7 +215,7 @@ int main() {
 }
 
 
-//              Math And Vectors
+//                                             Math And Vectors
 
 // Example one:     multiply each element in a vector by a costant
 
@@ -326,9 +327,9 @@ int main(){
      print(matrixexample)
      */
     
-    //                                  CPP
+//                                                 CPP
     
-    // import libraries
+// import libraries
 #include<iostream>
 #include<vector>
     using namespace std;
