@@ -18,7 +18,7 @@ else:
 
 */
 
-//                                       CPP
+        //                                       CPP
 
 // import input / output library
 #include<iostream>
