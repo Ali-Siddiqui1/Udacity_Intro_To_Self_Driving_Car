@@ -42,8 +42,33 @@ print(check_boolean,'\n')
 
 
 
+                            # Python   Loops
+# Python allows you loop over the list 
+print("1- Demonstrating for loop", "\n")
+for i in [0,1,2,3,4,5]:
+    print(i, "\n")
+    
+# Here range function is used with a for loop
+# This is an example of nested loop which is basically loop inside loop
+for left_num in range(5):
+    for right_num in range(5):
+        product = left_num * right_num
+        print(left_num,"x", right_num,"=", product,'\n')
 
+#           List And Loop
+my_list = [1, 2, 3, 'a', 'b', 'c']
+print("my list:", my_list,'\n')
 
+# print each element of a list indivisually
+for item in my_list:
+    print('my list is:',item,'\n')
+    
+# Print the number of element in a list
+num_elements = len(my_list) # len function for length
+print('my list has:', num_elements,'elements')
 
-
+# using range to loop through the a list by index
+for index in range(len(my_list)):
+    item = my_list[index] # accessing an element in a list
+    print('item is:', item)
 
