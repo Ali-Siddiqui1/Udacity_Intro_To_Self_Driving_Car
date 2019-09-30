@@ -70,5 +70,23 @@ print('my list has:', num_elements,'elements')
 # using range to loop through the a list by index
 for index in range(len(my_list)):
     item = my_list[index] # accessing an element in a list
+    print('item is:', item,'\n')
+
+# looping through a partial list
+print('slicing a list from begining')
+for item in my_list[:3]:
+    print('item is:', item,'\n')
+
+#Looping through a partial list again
+print('slicing a list from the end')
+for item in my_list[3:]:
+    print('item is:', item,'\n')
+
+# looping through a partial list again
+print('slicing a list in the middle')
+for item in my_list[2:4]:
     print('item is:', item)
+
+
+
 
