@@ -85,8 +85,17 @@ for item in my_list[3:]:
 # looping through a partial list again
 print('slicing a list in the middle')
 for item in my_list[2:4]:
-    print('item is:', item)
+    print('item is:', item,'\n')
+    
+print('Enumerating a list')
+for i, item in enumerate(my_list):
+    print('item number ',i, 'is',item,'\n')
 
+print('Another way to enumerate a list')
+for item in my_list:
+    index = my_list.index(item)
+    print('item number',item,' has:',index,'\n')
+    
 
 
 
