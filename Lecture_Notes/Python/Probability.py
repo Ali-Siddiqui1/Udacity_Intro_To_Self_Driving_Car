@@ -96,6 +96,24 @@ for item in my_list:
     index = my_list.index(item)
     print('item number',item,' has:',index,'\n')
     
+#           List Comprehension
+
+# The preferred 'Pyhtonic' way to create a list
+number = [x for x in range(10)]
+print(number,'\n')
+
+# The above is equivalent to the following just more compact
+for x in range(10):
+    number.append(x)
+    print('number',number,'\n')
 
 
+# Can do computation / flow control when generating
+squares = [x * x for x in range(10)]
+print('Squares',squares,'\n')
+
+import tuple
+# This example uses the **modulo** operator
+odds = [x for x in range(10) if x % 2 == 1]
+print('odds',odds)
 
