@@ -112,8 +112,17 @@ for x in range(10):
 squares = [x * x for x in range(10)]
 print('Squares',squares,'\n')
 
-import tuple
+
 # This example uses the **modulo** operator
 odds = [x for x in range(10) if x % 2 == 1]
 print('odds',odds)
+
+# Python Random Library
+import random as rd
+
+# call the Function named random 3 time and assign the result of each
+a = rd.random()
+b = rd.random()
+c = rd.random()
+print('a:', a,'b:', b,'c:', c)
 
