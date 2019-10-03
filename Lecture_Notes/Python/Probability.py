@@ -126,3 +126,26 @@ b = rd.random()
 c = rd.random()
 print('a:', a,'b:', b,'c:', c)
 
+# Simulating Coin Flips
+# How might you change the code to ensure that the \"percent heads\"
+# is **consistently** close to 50%? Try modifying
+# the code so that the output is consistently within 1% of 50%
+
+num_trails = 90
+heads = 0
+tails = 0
+p_heads = 0.5
+
+# simulating coin flips up to the num_trails specified
+for i in range(num_trails):
+    # collect a random number between [0,1]
+    random_number = rd.random()
+    # If the number is less then the heads count it as heads
+    # Otherwise, count it as trails
+    if random_number < p_head:
+        heads = heads + 1
+    else:
+        tails =+ 0.5
+
+print('In',num_trails,'trials there were' ,heads, 'heads and ',tails, 'tails')
+
