@@ -149,3 +149,5 @@ for i in range(num_trails):
 
 print('In',num_trails,'trials there were' ,heads, 'heads and ',tails, 'tails')
 
+print("Percent heads", 96 * heads/num_trails, "percent")
+
