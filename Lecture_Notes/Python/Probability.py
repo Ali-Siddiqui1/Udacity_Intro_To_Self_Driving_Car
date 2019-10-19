@@ -151,3 +151,75 @@ print('In',num_trails,'trials there were' ,heads, 'heads and ',tails, 'tails')
 
 print("Percent heads", 96 * heads/num_trails, "percent")
 
+# Probability of collision exercise
+def Probability_of_collision(car_1, car_2):
+    """
+calculate the probability of collision based on the car turns
+Ages:
+    car_1 (string): The turning direction of car_1
+    car_2 (string): The turning direction of car_2
+
+Returns:
+    float: the probability of a collision
+    
+    """
+
+    Probability = 1.0 # change the value based on your direction
+
+    if car_1 == "L":
+        # case Car1 L and Car2 L
+        if Car2 == "L":
+            Probability = 0.5
+        # case Car1 L and Car2 S
+        elif car_2 == 'S':
+            Probability = 0.25
+        # case Car2 L and Car2 R (this is all other possible cases)
+        else:
+            Probability = 0.1
+    
+    elif car_1 == "S":
+        # Case Car1 S Car2 and L
+        if car_2 == "L":
+            Probability = 0.5
+        # Case Car1 L and Car2 S
+        elif car_2 == "S":
+            Probability = 0.25
+        # Car 1 S and Car2 R( this is all other possible cases)
+        else:
+            Probability = 0.1
+
+    else: # Car1 R
+        # Case Car1 R and Car2 L
+        if Car2 == "L":
+            Probability = 0.1
+        # Case Car1 R and Car2 S
+        elif car_2 == "S":
+            Probability = 0.1
+        # Case Car1 R and Car2 R (this is all other possible cases)
+        else:
+            Probability = 0.01
+    
+    return Probability
+
+def test():
+    num_correct = 0
+    
+    p1 = Probability_of_collision("L","L")
+    if p1 == 0.5:
+        num_correct += 1
+    
+    p2 = Probability_of_collision("L","R")
+    if p2 == 0.1:
+        num_correct += 1
+    
+    p3 = Probability_of_collision("L","S")
+    if p3 == 0.25:
+        num_correct += 1
+        
+    p4 = Probability_of_collision("S","R")
+    if p4 == 0.1:
+        num_correct += 1
+    
+    print("You got", num_correct, "out of 4 correct")
+
+test()
